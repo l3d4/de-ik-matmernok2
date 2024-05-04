@@ -2,23 +2,42 @@
 
 ### Step-by-step guide to install MATLAB, Jupyter Lab, and MATLAB kernel on Windows:
 
-
+python version 3.9 3.10 3.11
 #### 1. Install Python:
-- Check if Python is installed by opening a command prompt and typing `python --version`.
+- Check if Python is installed by opening a command prompt and typing `py --version` or `python --version`.
 - If Python is not installed, download and install the latest version from [Python's official website](https://www.python.org/downloads/).
+when installing - Add Python to environment variables
+ha mégse működik akkor:
+PATH-hez:
+ha python --version nem fut
+python ms store-t nyitja meg
+de py --version működik akkor:
+add python to PATH
+windows key + x system properties >> system >> advanced system settings >> Environment variables >> Path double click >> ott new:
+new
+C:...user...appdata..pythonXX
+pythonXX\Scripts
+OK
+Manage app execution aliases
+App installer turn off
 
 #### 2. Install MATLAB:
 - Ensure you have a valid MATLAB license.
+download login neptun@mailbox.unideb.hu
+symbolic math toolbox
 - Download the MATLAB installer from [MathWorks website](https://www.mathworks.com/downloads/).
 - Run the installer and follow the installation instructions.
 
 #### 3. Install Jupyter Lab:
 - Open a command prompt and type `pip install jupyterlab`.
+check if installed correctly: jupyter lab
+shutdown
 
 #### 4. Install MATLAB kernel for Jupyter:
 - Open MATLAB.
 - Run the command `matlab.engine.shareEngine` to enable the MATLAB Engine API for Python.
 - Close MATLAB.
+pip install jupyter-matlab-proxy
 - Open a command prompt and type `pip install matlab_kernel`.
 - Type `python -m matlab_kernel install --user` to install the MATLAB kernel for Jupyter.
 
@@ -26,31 +45,12 @@
 - Open Jupyter Lab by typing `jupyter lab` in the command prompt.
 - Create a new Jupyter notebook by clicking on the "New" button and selecting "Notebook" -> "MATLAB".
 - Start using MATLAB in Jupyter Lab!
-# de-ik-matmernok2
 
-### Step-by-step guide to install MATLAB, Jupyter Lab, and MATLAB kernel on Windows:
+ha nem működik - no kernel - kernel disconnected jobb felső sarok
+bezár
+pip install setuptools 
+vagy matlab path-hez adása
+where matlab
+első futásnál bejelentkezés
 
-
-#### 1. Install Python:
-- Check if Python is installed by opening a command prompt and typing `python --version`.
-- If Python is not installed, download and install the latest version from [Python's official website](https://www.python.org/downloads/).
-
-#### 2. Install MATLAB:
-- Ensure you have a valid MATLAB license.
-- Download the MATLAB installer from [MathWorks website](https://www.mathworks.com/downloads/).
-- Run the installer and follow the installation instructions.
-
-#### 3. Install Jupyter Lab:
-- Open a command prompt and type `pip install jupyterlab`.
-
-#### 4. Install MATLAB kernel for Jupyter:
-- Open MATLAB.
-- Run the command `matlab.engine.shareEngine` to enable the MATLAB Engine API for Python.
-- Close MATLAB.
-- Open a command prompt and type `pip install matlab_kernel`.
-- Type `python -m matlab_kernel install --user` to install the MATLAB kernel for Jupyter.
-
-#### 5. Configure Jupyter Lab to work with MATLAB kernel:
-- Open Jupyter Lab by typing `jupyter lab` in the command prompt.
-- Create a new Jupyter notebook by clicking on the "New" button and selecting "Notebook" -> "MATLAB".
-- Start using MATLAB in Jupyter Lab!
+expose python? https://am111.readthedocs.io/en/latest/jmatlab_install.html
