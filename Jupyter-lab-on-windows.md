@@ -31,7 +31,7 @@ You should have that already installed on your system. In order to check which v
 `py --version`\
 `py -V`
 
-[Mathlab and Python compatibility](https://www.mathworks.com/support/requirements/python-compatibility.html)\
+[MATLAB and Python compatibility](https://www.mathworks.com/support/requirements/python-compatibility.html)\
 Matlab is currently compatible with Python versions: `3.9` / `3.10` / `3.11`
 
 #### Troubleshooting:
