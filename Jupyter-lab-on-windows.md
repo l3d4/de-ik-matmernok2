@@ -10,7 +10,7 @@ In order to use the MATLAB kernel in Jupyter Lab or Notebook:
 - MATLAB kernel has to be installed
 
 This was tested on Windows 10 2022H2.
-
+------
 ## Installation steps:
 #### Python:
 You should have that already installed on your system. In order to check which version of Python is currently installed:\
@@ -20,7 +20,7 @@ You should have that already installed on your system. In order to check which v
 `py -V`
 
 [Mathlab and Python compatibility](https://www.mathworks.com/support/requirements/python-compatibility.html)\
-Matlab is currently compatible with python versions: `3.9` / `3.10` / `3.11`
+Matlab is currently compatible with Python versions: `3.9` / `3.10` / `3.11`
 
 ##### Troubleshooting:
 * If Python is not installed, download and install the latest version from [Python's official website](https://www.python.org/downloads/). When installing: "Add Python to environment variables"/ "Add Python to path" 
@@ -30,23 +30,27 @@ Matlab is currently compatible with python versions: `3.9` / `3.10` / `3.11`
     * C:\Users\"user"\AppData\Local\Programs\Python\Python"xxx"\
     * C:\Users\"user"\AppData\Local\Programs\Python\Python"xxx"\Scripts\
 
+------
 ####  Matlab
 If you are installing from scratch, this should be the next step. You can download the installer from [MathWorks website](https://www.mathworks.com/downloads/). Don't forget to install the `Symbolic math toolbox`.
 
+------
 #### Install Jupyter Lab:
-In the command prompt type `pip install jupyterlab`
-Check if Jupyter Lab is working properly by typing `jupyter lab` into the command prompt. It will be opened in the default browser at `localhost:8888/lab`
+In the command prompt type `pip install jupyterlab`\
+Check if Jupyter Lab is working properly by typing `jupyter lab` into the command prompt. It will be opened in the default browser at `localhost:8888/lab`\
 Shutdown Jupyter Lab (File >> Shut Down)
 
+------
 #### Install MATLAB kernel for Jupyter Lab:
-In my experience, this is the tricky part.
+(In my experience, this is the tricky part. There are mixed guides online and I have had various error messages. This way it is working for me.)
 
-`pip install matlab_kernel`
+Open a command prompt and type in:\
+`pip install matlab_kernel`\
 Open jupyter lab by typing `jupyter lab` in te command prompt and choose MATLAB notebook from the Launcher.
 
 You can check the status of the kernel in the upper right corner. It should be in idle status.
 
-This code will test, if the MATLAB kernel and Symbolic math toolbox is installed and working correctly:
+This code will test, if the MATLAB kernel and Symbolic math toolbox is installed and working correctly. If I am corret, this is all you need for the course.
 ```matlab
 syms y(t);
 input = diff(y,t) + 3*y == exp(3*t);
@@ -55,10 +59,10 @@ disp(solution)
 ```
 Kernel status: busy, dolgozik kicsit és ki kellene írnia az eredményt
 `exp(3*t)/6 + C1*exp(-3*t)`
-
-###### Troubleshooting:
+------
+#####  Troubleshooting:
 You can check the logs and you can look for errors in the command prompt where jupyter lab was started from.
----
+
 If the kernel is connected and in idle status, but it is not implementing the code (i.e., the status of the kernel is not changed to busy):
 - Shutdown Jupyter Lab.
 - Open MATLAB.
@@ -81,7 +85,7 @@ no kernel
 kernel status connecting utan kernel status idle 
 
 expose python? https://am111.readthedocs.io/en/latest/jmatlab_install.html
-
+------
 #### 5. Configure Jupyter Lab to work with MATLAB kernel:
 - Open Jupyter Lab by typing `jupyter lab` in the command prompt.
 - Create a new Jupyter notebook by clicking on the "New" button and selecting "Notebook" -> "MATLAB".
