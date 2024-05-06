@@ -45,7 +45,8 @@ Matlab is currently compatible with Python versions: `3.9` / `3.10` / `3.11`
 
 ###  Matlab
 
-If you are installing from scratch, this should be the next step. You can download the installer from [MathWorks website](https://www.mathworks.com/downloads/). Don't forget to install the **Symbolic math toolbox**.
+If you are installing from scratch, this should be the next step. 
+You can download the installer from [MathWorks website](https://www.mathworks.com/downloads/). Don't forget to install the **Symbolic math toolbox**.
 
 ### Install Jupyter Lab:
 
