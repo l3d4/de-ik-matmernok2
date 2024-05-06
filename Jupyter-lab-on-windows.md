@@ -2,24 +2,25 @@
 
 ## Jupyter Lab and MATLAB kernel on Windows:
 
-In order to use the MATLAB in Jupyter Lab or Notebook:
+In order to use the MATLAB kernel in Jupyter Lab or Notebook:
 - Matlab has to be installed
 - a valid license is needed to be activated
+- correct version of Python has to be installed
+- Jupyter Lab / Jupyter Notebook has to be installed
 - MATLAB kernel has to be installed
+
+This was tested on Windows 10 2022H2.
 
 ## Installation steps:
 #### Python:
 You should have that already installed on your system. In order to check which version of Python is currently installed:
 `python --version`
-`python -V'
+`python -V`
 `py --version`
 `py -V`
 
-Mathworks support reuirements python compatibility
-Matlab is only compatible with python versions: 
-3.9 
-3.10 
-3.11
+[Mathlab and Python compatibility](https://www.mathworks.com/support/requirements/python-compatibility.html)
+Matlab is currently compatible with python versions: 3.9 / 3.10 / 3.11
 
 ###### Troubleshooting:
 * If Python is not installed, download and install the latest version from [Python's official website](https://www.python.org/downloads/). When installing: "Add Python to environment variables"/ "Add Python to path" 
@@ -29,8 +30,8 @@ Matlab is only compatible with python versions:
     * C:\Users\"user"\AppData\Local\Programs\Python\Python"xxx"\
     * C:\Users\"user"\AppData\Local\Programs\Python\Python"xxx"\Scripts\
 
-#### Install Matlab
-If you are installing from scratch, this should be the next step. You can download the installer from [MathWorks website](https://www.mathworks.com/downloads/). Don't forget to install the `Symbolic math toolbox`
+####  Matlab
+If you are installing from scratch, this should be the next step. You can download the installer from [MathWorks website](https://www.mathworks.com/downloads/). Don't forget to install the `Symbolic math toolbox`.
 
 #### Install Jupyter Lab:
 In the command prompt type `pip install jupyterlab`
