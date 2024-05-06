@@ -45,21 +45,21 @@ Matlab is currently compatible with Python versions: `3.9` / `3.10` / `3.11`
 
 ###  Matlab
 
-If you are installing from scratch, this should be the next step. 
+If you are installing from scratch, this should be the next step.\
 You can download the installer from [MathWorks website](https://www.mathworks.com/downloads/). Don't forget to install the **Symbolic math toolbox**.
 
-### Install Jupyter Lab:
+### Jupyter Lab:
 
 In the command prompt type `pip install jupyterlab`\
 Check if Jupyter Lab is working properly by typing `jupyter lab` into the command prompt. It will be opened in the default browser at `localhost:8888/lab`\
 Shutdown Jupyter Lab (File >> Shut Down)
 
-### Install MATLAB kernel for Jupyter Lab:
+### MATLAB kernel for Jupyter Lab:
 
 Open a command prompt and type in:\
 `pip install matlab_kernel`
 
-### 5. Creating a MATLAB notebook and testing the kernel:
+### Creating a MATLAB notebook and testing the kernel:
 
 Open jupyter lab by typing `jupyter lab` in the command prompt and choose MATLAB notebook from the Launcher.
 
