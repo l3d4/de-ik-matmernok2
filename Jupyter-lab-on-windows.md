@@ -14,10 +14,10 @@ This was tested on Windows 10 2022H2.
 ## Installation steps:
 #### Python:
 You should have that already installed on your system. In order to check which version of Python is currently installed:
-`python --version`
-`python -V`
-`py --version`
-`py -V`
+`python --version`\
+`python -V`\
+`py --version`\
+`py -V`\
 
 [Mathlab and Python compatibility](https://www.mathworks.com/support/requirements/python-compatibility.html)
 Matlab is currently compatible with python versions: 3.9 / 3.10 / 3.11
