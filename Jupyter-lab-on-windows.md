@@ -14,6 +14,10 @@ This was tested on Windows 10 2022H2.
 *There are mixed guides online with different installation methods and packages. This one was working for me. In my experience, the tricky part is the installation of the MATLAB kernel. I have had various error messages with other methods. This way it is working for me.\
 For example, if I follow [the guide from Mathworks' official blog](https://blogs.mathworks.com/matlab/2023/06/26/matlab-kernel-for-jupyter-now-with-windows-support/), it is not working... At least for me, it can be okay for others.*
 
+Don't mix the two:
+https://github.com/mathworks/jupyter-matlab-proxy
+https://github.com/Calysto/matlab_kernel
+
 ## TLDR:
 
 ```bash
