@@ -65,7 +65,7 @@ Open jupyter lab by typing `jupyter lab` in the command prompt and choose MATLAB
 
 You can check the status of the kernel in the upper right corner. It should be in idle status.
 
-This code will test, if the MATLAB kernel and Symbolic math toolbox* is installed and working correctly. If I am correct, this is all you need for the course.
+This code will test, if the MATLAB kernel and *Symbolic math toolbox* is installed and working correctly. If I am correct, this is all you need for the course.
 
 ```matlab
 syms y(t);
@@ -74,7 +74,8 @@ solution = dsolve(input);
 disp(solution)
 ```
 
-Kernel status sould be busy, after a while the output should be:\
+Kernel status should change to busy and start working.\
+After a while the output should be:\
 `exp(3*t)/6 + C1*exp(-3*t)`
 
 ####  Troubleshooting:
