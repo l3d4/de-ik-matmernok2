@@ -15,7 +15,7 @@ This was tested on Windows 10 2022H2.
 For example, if I follow [the guide from Mathworks' official blog](https://blogs.mathworks.com/matlab/2023/06/26/matlab-kernel-for-jupyter-now-with-windows-support/), it is not working... At least for me, it can be okay for others.*
 
 Don't mix the two:
-https://github.com/mathworks/jupyter-matlab-proxy\
+https://github.com/mathworks/jupyter-matlab-proxy \
 https://github.com/Calysto/matlab_kernel
 
 ## TLDR:
