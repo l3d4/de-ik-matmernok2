@@ -40,8 +40,8 @@ Matlab is currently compatible with Python versions: `3.9` / `3.10` / `3.11`
 * If `python` is not working, but `py` is, then python is not in the path.
 * How to add python to path:
   - `Windows Key + x` >> System  >> Advanced system settings >> Environment variables >> Path >> Edit >> New
-    * C:\Users\"user"\AppData\Local\Programs\Python\Python"xxx"\
-    * C:\Users\"user"\AppData\Local\Programs\Python\Python"xxx"\Scripts\
+    * C:\Users\<user>\AppData\Local\Programs\Python\Python<version>\
+    * C:\Users\<user>\AppData\Local\Programs\Python\Python<version>\Scripts\
 
 ###  Matlab
 
